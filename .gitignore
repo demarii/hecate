@@ -41,6 +41,7 @@ configure
 depcomp
 install-sh
 ltmain.sh
+libtool
 m4/libtool.m4
 missing
 src/config.h.in
@@ -69,3 +70,10 @@ src/*_unittest
 src/*_integration
 # trs for test files
 src/*.trs
+#build stuff
+Makefile
+Makefile.in
+config.status
+#app specific
+hecate.conf
+src/Version.hpp
