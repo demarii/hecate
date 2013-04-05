@@ -1,12 +1,13 @@
 INCLUDES = -I$(top_srcdir)/src  -I$(top_builddir)/src -DPREFIX=\"@prefix@\"
 
-bin_PROGRAMS = Broker
+bin_PROGRAMS = broker
 
 include_HEADERS = Version.hpp
 
 noinst_HEADERS = Broker.hpp 
 
-Broker_SOURCES = Broker_Main.cpp 
+broker_SOURCES = Broker_Main.cpp 
+broker_LDFLAGS = 
                                          
 TESTS = \
     Init_unittest 
