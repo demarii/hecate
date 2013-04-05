@@ -25,10 +25,10 @@
 const char SERVER_VERSION[] = "@VERSION@";
 const char SERVER_SIGNATURE[] =  "@SIGNATURE@";
 
-const char BUILD_UNAME[] =  "@BUNAME@";
-const char BUILD_USER[] = "@BUSER@";
-const char BUILD_HOST[] = "@BHOST@";
-const char BUILD_NUM[[ = "@BNUM@";
+const char BUILD_UNAME[] = "@BUNAME@";
+const char BUILD_USER[]  = "@BUSER@";
+const char BUILD_HOST[]  = "@BHOST@";
+const char BUILD_NUM[]   = "@BNUM@";
 
 
 #endif /* VERSION_HPP_ */

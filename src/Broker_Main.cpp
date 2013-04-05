@@ -27,6 +27,7 @@
 /*
  * System Includes
  */
+#include <iostream>
 #include <unistd.h> /* daemon(), getpid() */
 #include <signal.h>
 #include <cstdlib> /* getenv() because boost po env parsing sucks */

@@ -77,3 +77,4 @@ config.status
 #app specific
 hecate.conf
 src/Version.hpp
+src/broker

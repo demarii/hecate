@@ -43,11 +43,11 @@ class Init_unittest : public CppUnit::TestCase
     Init_unittest() { }
 
     void stubTest() {
-       CPPUNIT_PASS("Stub Test")
+       CPPUNIT_ASSERT(1 == 1);
     }
 };
 
-CPPUNIT_TEST_SUITE_REGISTRATION(MetaServer_unittest);
+CPPUNIT_TEST_SUITE_REGISTRATION(Init_unittest);
 
 
 int main()
@@ -68,51 +68,3 @@ int main()
 /*
  * Method Stubs
  */
-void
-MetaServerPacket::setAddress(const boost::asio::ip::address& a)
-{
-
-}
-
-void
-MetaServerPacket::setPacketType(const NetMsgType& nmt)
-{
-}
-
-unsigned int
-MetaServerPacket::addPacketData(boost::uint32_t d)
-{
-	return 1;
-}
-
-unsigned int
-MetaServerPacket::addPacketData(const std::string& s)
-{
-	return 1;
-}
-
-const std::string
-MetaServerPacket::getPacketMessage(unsigned int offset) const
-{
-	return "";
-}
-
-MetaServerPacket::~MetaServerPacket()
-{
-}
-
-std::ostream& operator<<(std::ostream &os, const MetaServerPacket &mp)
-{
-	return os << mp.getSequence();
-}
-
-char*
-MetaServerPacket::unpack_uint32(uint32_t *dest, char *buffer) const
-{
-    uint32_t netorder;
-
-    memcpy(&netorder, buffer, sizeof(uint32_t));
-    *dest = ntohl(netorder);
-    return buffer+sizeof(uint32_t);
-
-}
